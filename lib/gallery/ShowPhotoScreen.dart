@@ -32,43 +32,11 @@ class DetailScreen extends StatelessWidget {
                 value: event == null
                     ? 0
                     : event.cumulativeBytesLoaded / event.expectedTotalBytes,
-              ),
+              )
             ),
           ),
         )
     );
-
-
-
-
-
-
-//    return new Scaffold(
-//        appBar: AppBar(
-//          title: Text("ExampleHorizontal"),
-//        ),
-//        body: Swiper(
-//          itemBuilder: (BuildContext context, int index) {
-//            return new Image.network(galleryListResponse.temp[index].avatar_url,
-//              fit: BoxFit.fill,
-//            );
-//          },
-//
-////          indicatorLayout: PageIndicatorLayout.COLOR,
-//          autoplay: true,
-//          itemCount: galleryListResponse.temp.length,
-//          pagination: new SwiperPagination(),
-//          control: new SwiperControl(),
-//        ));
-//    return Scaffold(
-//      appBar: AppBar(
-//        title: Text('Flutter Gallery'),
-//      ),
-//      body: Padding(
-//        padding: EdgeInsets.all(16.0),
-//        child: Image(image: NetworkImage(galleryListResponse.avatar_url),),
-//      ),
-//    );
   }
 }
 
